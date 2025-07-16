@@ -487,3 +487,20 @@ renderLevels();
 setupEvents();
 updateProgress();
 updateXPBar();
+
+// --- Dashboard Toggle for Mobile ---
+const dashboardToggle = document.getElementById('dashboard-toggle');
+const dashboard = document.getElementById('dashboard');
+if (dashboardToggle && dashboard) {
+  dashboardToggle.onclick = function() {
+    dashboard.classList.toggle('open');
+  };
+  // Close dashboard when clicking outside (mobile only)
+  document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 900 && dashboard.classList.contains('open')) {
+      if (!dashboard.contains(e.target) && e.target !== dashboardToggle) {
+        dashboard.classList.remove('open');
+      }
+    }
+  });
+}
