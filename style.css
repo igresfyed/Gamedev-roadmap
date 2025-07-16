@@ -504,19 +504,58 @@ header h1 {
     transform: scale(1.06);
     box-shadow: 0 0 32px #00fff7, 0 0 40px #ff3576;
 }
+/* Responsive Dashboard & Layout */
 @media (max-width: 900px) {
     #dashboard {
-        width: 120px;
-        font-size: 0.8em;
+        width: 100vw;
+        height: auto;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 2001;
+        background: #23283a;
+        border-right: none;
+        border-bottom: 4px solid #00fff7;
+        font-size: 0.95em;
+        padding: 1em 0.5em 1em 0.5em;
+        display: none;
+        box-shadow: 0 4px 24px #00fff7cc;
+    }
+    #dashboard.open {
+        display: block;
+    }
+    #dashboard-toggle {
+        display: block;
+        position: fixed;
+        left: 1em;
+        top: 1em;
+        z-index: 2100;
+        background: linear-gradient(90deg, #ff3576, #00fff7 80%);
+        color: #fff;
+        font-family: 'Press Start 2P', monospace, Arial, sans-serif;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 10px;
+        padding: 0.6em 1.2em;
+        box-shadow: 0 0 16px #00fff7, 0 0 24px #ff3576;
+        cursor: pointer;
+        transition: background 0.2s, box-shadow 0.2s;
+    }
+    #main-ui-container {
+        flex-direction: column;
+        margin-top: 60px;
     }
     #main-content {
-        margin-left: 130px;
+        margin-left: 0;
         padding: 1em 0.5em 1em 0.5em;
+        width: 100vw;
     }
     #sidebar {
         width: 100vw;
         right: -100vw;
         border-radius: 0;
+        top: 60px;
+        height: calc(100vh - 60px);
     }
     #sidebar.open {
         right: 0;
@@ -526,4 +565,25 @@ header h1 {
         min-width: 180px;
         max-width: 98vw;
     }
+}
+@media (min-width: 1600px) {
+    #main-content {
+        max-width: 1200px;
+        margin-left: 260px;
+        margin-right: auto;
+        padding: 2.5em 4em 2.5em 4em;
+        font-size: 1.15em;
+    }
+    #dashboard {
+        font-size: 1.1em;
+        width: 300px;
+    }
+    .level-section {
+        font-size: 1.1em;
+        padding: 2em 2em 1.5em 2em;
+    }
+}
+/* Dashboard toggle button hidden by default */
+#dashboard-toggle {
+    display: none;
 } 
