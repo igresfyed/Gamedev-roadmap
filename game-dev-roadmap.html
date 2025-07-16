@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Developer Roadmap - Aman</title>
+    <link rel="stylesheet" href="game-dev-roadmap.css">
+</head>
+<body>
+    <div id="xp-bar-container" aria-label="XP Progress Bar">
+        <div id="xp-bar-bg">
+            <div id="xp-bar-fill"></div>
+            <span id="xp-bar-label">Level 1 - 0 XP</span>
+        </div>
+    </div>
+    <div id="welcome-overlay">
+        <div class="welcome-content neon">
+            <div class="welcome-icon">
+                <span class="emoji-gamepad">🎮</span>
+            </div>
+            <h1 class="neon-title multi-glow">Game Developer Roadmap</h1>
+            <div class="welcome-subtitle animated-subtitle">Level up your skills, Aman!</div>
+            <button id="start-roadmap-btn" class="big-btn">Start Roadmap</button>
+        </div>
+    </div>
+    <div id="main-ui-container">
+        <aside id="dashboard" aria-label="Recommended YouTube Playlists">
+            <h2>📺 Recommended YouTube Playlists</h2>
+            <ul>
+
+                
+                        <!-- Existing playlists below -->
+                <li><strong>📚 Playlists:</strong></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLCInYL3l2AajYlZGzU_LVrHdoouf8W6ZN" target="_blank">C++ Programming - Elzero Web School</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLCaV_Mdd-As7tyd40gnAMjiu5LGhfNcpQ" target="_blank">C++ Programming - Eng. Osama</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLCInYL3l2AagY7fFlhCrjpLiIFybW3yQv" target="_blank">C# Programming - Elzero Web School</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PL1DUmTEdeA6K7rdxKiWJq6JIxTvHalY8f" target="_blank">Java Programming - Elzero Web School</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PL1DUmTEdeA6Icttz-O9C3RPRF8R8Px5vk" target="_blank">Java Programming - Eng. Osama</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLJzrJ6NUlRb8e5o0jGe8yHYGy2Mu17Eeg" target="_blank">Python Programming - Elzero Web School</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OveN7SrZN5QjwyXLBzUDkJB" target="_blank">Python Programming - Eng. Osama</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OtdjT8H_OZE1ENRN1meHa8k" target="_blank">Game Development Basics - Elzero Web School</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OsG8dnisr_-2WGyx7lpgGEE" target="_blank">Game Development Advanced - Elzero Web School</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLknwEmKsW8OsnUAj3ThlerzPeMKk9GXXR" target="_blank">Game Development Advanced - Eng. Osama</a></li>
+                <li><a href="https://www.youtube.com/@Brackeys" target="_blank">Brackeys</a></li>
+                <li><a href="https://www.youtube.com/@GMTK" target="_blank">GMTK</a></li>
+                <li><a href="https://www.youtube.com/@GDQuest" target="_blank">GDQuest</a></li>
+                <li><a href="https://www.youtube.com/@CodeMonkeyUnity" target="_blank">CodeMonkeyUnity</a></li>
+                <li><a href="https://www.youtube.com/@Blackthornprod" target="_blank">Blackthornprod</a></li>
+                <li><a href="https://www.youtube.com/@ThomasBrush" target="_blank">ThomasBrush</a></li>
+                <li><a href="https://www.youtube.com/@DaniDev" target="_blank">DaniDev</a></li>
+                <li><a href="https://www.youtube.com/@SebastianLague" target="_blank">SebastianLague</a></li>
+                <li><a href="https://www.youtube.com/@GameDevTV" target="_blank">GameDevTV</a></li>
+                <li><a href="https://www.youtube.com/@UnrealEngine" target="_blank">UnrealEngine</a></li>
+                 
+                <li><a href="https://www.youtube.com/@ElzeroWebSchool" target="_blank">ElzeroWebSchool</a></li>
+                <li><a href="https://www.youtube.com/@TheNewBaghdad" target="_blank">TheNewBaghdad</a></li>
+                <li><a href="https://www.youtube.com/@osamaelzero" target="_blank">osamaelzero</a></li>
+                <li><a href="https://www.youtube.com/@MohammedDev" target="_blank">MohammedDev</a> </li>
+            </ul>
+        </aside>
+        <main id="main-content" aria-label="Game Developer Roadmap">
+            <header>
+                <h1>🎮 Game Developer Roadmap</h1>
+                <div id="overall-progress">
+                    <div id="overall-progress-bar"><span id="overall-progress-label">0%</span></div>
+                    <div id="motivation-message">Let the quest begin, Aman!</div>
+                </div>
+            </header>
+            <section id="levels"></section>
+        </main>
+        <div id="sidebar" class="sidebar" aria-label="Topic Details Sidebar">
+            <button id="close-sidebar" aria-label="Close Sidebar">&times;</button>
+            <div id="sidebar-content"></div>
+            <div id="sidebar-nav">
+                <button id="sidebar-prev" aria-label="Previous Topic">&#8592;</button>
+                <button id="sidebar-next" aria-label="Next Topic">&#8594;</button>
+            </div>
+        </div>
+        <div id="sidebar-backdrop"></div>
+    </div>
+    <script src="game-dev-roadmap.js"></script>
+</body>
+</html>
